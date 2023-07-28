@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 //Uses dotenv to connect to DB or statement for default route if variables are unavailable
-const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017/mySocial';
+const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mySocial';
 
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
 
